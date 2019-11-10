@@ -3,6 +3,6 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters 
   
   def actors_list
-    self.actors.Actor.full_name
+    self.actors.full_name
   end 
 end
